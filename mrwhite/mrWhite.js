@@ -1,8 +1,50 @@
 window.addEventListener("load", () => {
   let numberOfPlayers = document.querySelectorAll(".player");
   let cards = document.querySelector(".cards");
-  let words = ["Submarine", "Grandma", "School", "Umbrella"];
-  let mrwhitewords = ["SpaceShip", "Grandpa", "Court", "Coat"];
+  let words = [
+    "Submarine",
+    "Grandma",
+    "School",
+    "Umbrella",
+    "Bus",
+    "Bracelet",
+    "Astronaut",
+    "Assassin",
+    "Spy",
+    "Computer",
+    "Speaker",
+    "Sea",
+    "Europe",
+    "Sun",
+    "Waterfall",
+    "Lollipop",
+    "Sandwich",
+    "Shirt",
+    "Fishes",
+    "Whale",
+  ];
+  let mrwhitewords = [
+    "SpaceShip",
+    "Grandpa",
+    "Kindergarden",
+    "Coat",
+    "Car",
+    "Earings",
+    "Diver",
+    "Spy",
+    "Cop",
+    "Monitor",
+    "Microphone",
+    "Pool",
+    "America",
+    "Moon",
+    "River",
+    "Gum",
+    "Hamburger",
+    "Pants",
+    "Fisherman",
+    "Shark",
+  ];
   let inputname;
   let randomnum;
   let randomnum2;
@@ -16,6 +58,7 @@ window.addEventListener("load", () => {
     for (let num of numberOfPlayers) {
       num.addEventListener("click", () => {
         randomnum2 = getRandomInt(0, num.innerHTML);
+        console.log(randomnum2);
         for (let i = 0; i < num.innerHTML; i++) {
           let card = document.createElement("div");
           card.className = "card";
@@ -46,8 +89,7 @@ window.addEventListener("load", () => {
   };
   const placewords = () => {
     let existingCards = document.querySelectorAll(".card");
-    randomnum = getRandomInt(0, 4);
-    console.log(randomnum2);
+    randomnum = getRandomInt(0, words.length);
     for (let i = 0; i < existingCards.length; i++) {
       existingCards[i].addEventListener("click", () => {
         if (existingCards[i].innerHTML !== "?") {
@@ -137,7 +179,7 @@ window.addEventListener("load", () => {
             okbtn.className = "okbtn";
             okbtn.innerHTML = "OK";
             shadow.className = "shadow";
-            shadow.innerHTML = allcards[i].innerHTML + " " + "Is Mr White";
+            shadow.innerHTML = allcards[i].innerHTML + "</br> " + "Is Mr White";
             document.body.appendChild(shadow);
             shadow.appendChild(okbtn);
             okbtn.addEventListener("click", () => {

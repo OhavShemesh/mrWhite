@@ -90,21 +90,25 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 5rem;
+  font-size: 3rem;
   color: white;
+  text-align: center;
   font-weight: bold;
   flex-direction: column;
 }
 .okbtn {
   margin-top: 20px;
-  font-size: 2rem;
+  font-size: 1rem;
   background-color: white;
   border-radius: 10px;
   padding: 5px;
   font-weight: bold;
-  width: 100px;
-  height: 50px;
+  width: 50px;
+  height: 30px;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .inputname {
   height: 50px;
@@ -121,7 +125,7 @@ body {
 .startbtn {
   background-color: black;
   color: #ccc;
-  font-size: 2rem;
+  font-size: 1rem;
   padding: 5px 10px 5px 10px;
   border-radius: 20px;
   cursor: pointer;
@@ -136,6 +140,6 @@ body {
     gap: 5px;
   }
   .card {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 }
