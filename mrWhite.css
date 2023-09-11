@@ -1,0 +1,128 @@
+/* 
+font-family: 'Cherry Bomb One', cursive;
+font-family: 'Open Sans', sans-serif;
+ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body::-webkit-scrollbar {
+  width: 0;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: #ccc;
+  user-select: none;
+}
+/* header */
+.header {
+  font-family: "Open Sans", sans-serif;
+  display: flex;
+  justify-content: center;
+  font-size: 3rem;
+}
+/* Scale */
+.peoplescale {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.player {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #000;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+/* cards */
+.cards {
+  margin: 0 auto;
+  width: 70vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  gap: 30px;
+}
+
+.card {
+  border: 4px solid #000;
+  width: 10vw;
+  height: 15vw;
+  border-radius: 20px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 900;
+  font-size: 2.5rem;
+}
+.card:hover {
+  transform: scale(1.1);
+}
+/* ScaleChanged */
+.secondscale {
+  display: flex;
+  justify-content: center;
+}
+.secondscale p {
+  text-decoration: underline;
+  color: purple;
+  text-align: center;
+  display: none;
+  width: fit-content;
+}
+/* Shadow */
+.shadow {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  background-color: black;
+  opacity: 0.8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 5rem;
+  color: white;
+  font-weight: bold;
+  flex-direction: column;
+}
+.okbtn {
+  margin-top: 20px;
+  font-size: 2rem;
+  background-color: white;
+  border-radius: 10px;
+  padding: 5px;
+  font-weight: bold;
+  width: 100px;
+  height: 50px;
+  cursor: pointer;
+}
+.inputname {
+  height: 50px;
+  font-size: 2rem;
+  text-align: center;
+}
+/* StartGame */
+.startgame {
+  display: none;
+  justify-content: center;
+  margin-top: 50px;
+}
+.startbtn {
+  background-color: black;
+  color: #ccc;
+  font-size: 2rem;
+  padding: 5px 10px 5px 10px;
+  border-radius: 20px;
+  cursor: pointer;
+}
